@@ -38,7 +38,7 @@ function playRound(computerSelection, playerSelection) {
 function game() {
   for (let i = 0; i < 5; i++) {
     let computerSelection = computerPlay();
-    let playerSelection = prompt("Choose your Character!").toLowerCase();
+    let playerSelection = prompt("Choose your Character! Either rock, paper or scissors.").toLowerCase();
     let result = playRound(computerSelection, playerSelection);
     if (result == "You win") {
       playerscore++
