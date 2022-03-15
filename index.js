@@ -32,6 +32,8 @@ function playRound(computerSelection, playerSelection) {
     return "You win"
   } else {
     console.log("error 729");
+    alert("You didn't choose rock, paper or scissors. Please try again.")
+    reload()
   }
 }
 
