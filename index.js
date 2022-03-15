@@ -55,6 +55,8 @@ function game() {
   }
 }
 
+alert("Welcome to rock, paper scissors. This will be a 5 round game. Good luck!")
+
 game()
 
 if (playerscore > computerscore) {
