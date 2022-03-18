@@ -27,20 +27,20 @@ scissorsVar.addEventListener("click", function() {
 function scoreCheck(result) {
   if (result == "You win") {
     playerscore++
-    document.querySelector("div").style.color = "green"
-    document.querySelector("div").textContent = "You win!"
+    document.querySelector(".resultsDiv").style.color = "green"
+    document.querySelector(".resultsDiv").textContent = "You win!"
   } else if (result == "The Computer Wins") {
     computerscore++
-    document.querySelector("div").style.color = "red"
-    document.querySelector("div").textContent = "You lose!"
+    document.querySelector(".resultsDiv").style.color = "red"
+    document.querySelector(".resultsDiv").textContent = "You lose!"
   } else if (result == "It's a tie") {
-    document.querySelector("div").style.color = "blue"
-    document.querySelector("div").textContent = "It's a tie"
+    document.querySelector(".resultsDiv").style.color = "blue"
+    document.querySelector(".resultsDiv").textContent = "It's a tie"
   } else {
     "error 832"
   }
 
-  document.querySelector(".scoreDiv").textContent = ("player score: " + playerscore + ". computer score: " + computerscore + ".")
+  document.querySelector(".scoreDiv").textContent = ("Player -> " + playerscore + " | Computer -> " + computerscore + ".")
 
   if ((playerscore == 5) || (computerscore == 5)) {
     if (playerscore > computerscore) {

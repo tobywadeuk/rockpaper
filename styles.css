@@ -1,15 +1,46 @@
-.resultsDiv{
-  padding: 50px;
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Welcome {
+  padding: 20px;
   font-size: 20px;
 }
 
-button{
-  padding:10px;
-  margin:10px;
+.resultsDiv {
+  padding: 20px;
+  font-size: 20px;
 }
 
-
-.scoreDiv{
+.scoreDiv {
   padding-top: 20px;
   font-size: 20px;
+}
+
+button {
+  font-family: serif;
+  background-color: #3454D1;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #34D1BF;
+  opacity: 95;
+}
+
+button:active {
+  transform: translateY(3px);
+}
+
+div{
+  font-family: Roboto;
 }
